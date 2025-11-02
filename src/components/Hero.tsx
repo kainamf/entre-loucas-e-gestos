@@ -10,7 +10,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(/671d3738-aae2-4b53-90d9-f5d2d0f504b7.jpeg)',
+          backgroundImage: 'url(/tableTop.jpeg)',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
@@ -19,9 +19,9 @@ export default function Hero({ onCTAClick }: HeroProps) {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <div className="mb-8 flex justify-center">
           <img
-            src="/20220730_214749.png"
+            src="/leTableLogo.png"
             alt="Le Table Logo"
-            className="w-32 h-32 md:w-40 md:h-40 opacity-90"
+            className="w-32 md:w-40 h-auto opacity-90"
           />
         </div>
 

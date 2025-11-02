@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="text-center mb-12">
           <div className="mb-6 flex justify-center">
             <img
-              src="/20220730_214749.png"
+              src="/leTableLogo.png"
               alt="Le Table Logo"
-              className="w-20 h-20 opacity-80"
+              className="w-20 h-auto opacity-80"
             />
           </div>
           <h3 className="text-2xl font-light tracking-wide mb-2">Entre Louças e Gestos</h3>
