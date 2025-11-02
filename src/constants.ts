@@ -1,6 +1,9 @@
 // Informações centralizadas para uso nos componentes
-export const INSTAGRAM_LINK = 'https://www.instagram.com/triadedaapresentacaopessoal';
-export const EVENT_LINK = 'https://www.uticket.com.br/event/01L8TUOAOJX9L4';
+// Preferential links for the new landing page (Leandra)
+export const INSTAGRAM_LINK = 'https://www.instagram.com/letable.mesaposta';
+// WhatsApp direct link to reserve a spot for the course (Leandra)
+export const EVENT_LINK = 'https://wa.me/5521969886267?text=' + encodeURIComponent('Olá Leandra, gostaria de reservar minha vaga no curso "Entre Louças e Gestos".');
+export const EMAIL = 'mailto:leandra.marques03@gmail.com';
 
 // Informações das consultoras da Tríade
 export const BRUNA_INFO = {

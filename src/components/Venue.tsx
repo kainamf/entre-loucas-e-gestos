@@ -13,6 +13,13 @@ export default function Venue() {
                             <h3 className="text-3xl md:text-4xl font-script text-font mb-4">
                                 Local do Evento!
                             </h3>
+                            {/* Pricing / CTA for the course */}
+                            <div className="mt-4">
+                                <div className="inline-block bg-brand.green text-white px-4 py-2 rounded-full font-semibold">R$ 1.350,00 à vista • ou 3x</div>
+                                <div className="mt-4">
+                                    <a href={"https://wa.me/5521969886267?text=" + encodeURIComponent('Olá Leandra, gostaria de reservar minha vaga no curso Entre Louças e Gestos.')} target="_blank" rel="noopener noreferrer" className="inline-block bg-brand.beige text-font px-6 py-2 rounded-full font-semibold shadow-md hover:opacity-95">Reserve sua vaga agora</a>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="grid lg:grid-cols-2 gap-12 items-start">

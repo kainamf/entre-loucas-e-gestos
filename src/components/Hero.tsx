@@ -2,84 +2,52 @@ import { EVENT_LINK } from '../constants';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-primary-100 relative overflow-hidden">
+        <section className="min-h-screen bg-brand.light relative overflow-hidden">
             <div className="container mx-auto px-4 py-12 md:pt-16 md:pb-24 relative z-10 max-w-6xl">
-                <div className="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
-                    {/* Left Column: Logo and Text */}
-                    <div className="order-1 md:order-1 text-center">
-                        {/* Logo */}
-                        <div className="mb-6">
-                            <img
-                                src="/assets/images/logos/logo.png"
-                                alt="Tríade da Apresentação Pessoal"
-                                className="h-24 md:h-28 mb-8 mx-auto"
-                            />
-                        </div>
-
-                        {/* Main Title */}
-                        <div className="mb-6">
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-secondary-700 leading-tight">
-                                <span className="block mb-1">O Corpo Fala,</span>
-                                <span className="block mb-1">a Imagem Confirma,</span>
-                                <span className="block">a Voz Sustenta</span>
+                <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+                    {/* Left Column: Title and Subtitle */}
+                    <div className="order-1 md:order-1 text-center md:text-left">
+                        <div className="mb-4">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-font leading-tight">
+                                Entre Louças e Gestos
                             </h1>
                         </div>
+                        <div className="mb-6">
+                            <p className="text-lg md:text-xl text-secondary-700">
+                                A arte de receber com elegância, sensibilidade e naturalidade
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start mt-6">
+                            <a
+                                href={EVENT_LINK}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-brand.green text-white px-6 py-3 rounded-full text-lg font-semibold hover:opacity-95 transform hover:scale-102 transition-all duration-200 shadow-md inline-block"
+                            >
+                                Garanta sua vaga
+                            </a>
+                        </div>
                     </div>
 
-                    {/* Right Column: Circular Image */}
-                    <div className="order-2 md:order-2 flex justify-center">
-                        <div className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-lg border-4 border-secondary-500">
+                    {/* Right Column: Circular Image (placeholder) */}
+                    <div className="order-2 md:order-2 flex justify-center md:justify-end">
+                        <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg overflow-hidden shadow-lg border-2 border-brand.warm">
+                            {/* Replace this image with a photo of Leandra arranging a table or a close of dishes */}
                             <img
-                                src="/assets/images/triade.jpeg"
-                                alt="Tríade da Apresentação Pessoal"
-                                className="w-full h-full object-cover object-top"
+                                src="/assets/images/team/leandra.jpeg"
+                                alt="Leandra montando mesa posta"
+                                className="w-full h-full object-cover object-center"
                             />
                         </div>
                     </div>
                 </div>
 
-                {/* Centered Text Content */}
+                {/* Short invite */}
                 <div className="max-w-2xl mx-auto text-center mt-12 md:mt-16">
-                    {/* First Block */}
-                    <div className="space-y-3 mb-8">
-                        <p className="text-lg md:text-xl text-secondary-700">
-                            Uma imersão com a
-                        </p>
-                        <p className="text-xl md:text-2xl font-semibold text-secondary-700">
-                            Tríade da Apresentação Pessoal
-                        </p>
-                        <p className="text-lg md:text-xl text-secondary-700">
-                            para transformar presença em potência.
-                        </p>
-                    </div>
-                    {/* Second Block */}
-                    <div className="space-y-3 mb-8">
-                        <p className="text-lg md:text-xl text-secondary-700">
-                            Um encontro entre imagem, presença e propósito.
-                        </p>
-                        <p className="text-base md:text-lg font-semibold text-secondary-500">
-                            Palestras • Conexão • Experiência
-                        </p>
-                    </div>
-                    {/* Third Block */}
-                    <div className="space-y-3">
-                        <p className="text-lg md:text-xl text-secondary-700">
-                            Esperamos por você para brindar à esse momento com elegância e propósito.
-                        </p>
-                    </div>
-
-                </div>
-
-                {/* CTA Button */}
-                <div className="flex my-8 flex-col sm:flex-row gap-3 justify-center items-center">
-                    <a 
-                        href={EVENT_LINK}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-secondary-300 text-background px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg inline-block"
-                    >
-                        GARANTIR MINHA VAGA
-                    </a>
+                    <p className="text-lg md:text-xl text-secondary-700">
+                        Um curso particular pensado para mulheres que desejam transformar cada refeição em um gesto de acolhimento e sofisticação.
+                    </p>
                 </div>
             </div>
         </section>

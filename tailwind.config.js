@@ -37,6 +37,15 @@ export default {
         },
         background: '#fafafa',
       },
+        // New brand / landing colors (Entre Louças e Gestos)
+        brand: {
+          green: '#a8b098',
+          beige: '#a68f7e',
+          sand: '#c3b2a1',
+          light: '#d7c8c0',
+          warm: '#bfb2a8',
+          soft: '#c8bfb8',
+        },
     },
   },
   plugins: [],

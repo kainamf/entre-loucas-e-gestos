@@ -1,39 +1,30 @@
-import { INSTAGRAM_LINK } from '../constants';
+import { INSTAGRAM_LINK, EVENT_LINK, EMAIL } from '../constants';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-700 text-white py-4 relative z-[60]">
+    <footer className="bg-brand.warm text-font py-6 relative z-[60]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm text-white text-center">
-          {/* Instagram Link */}
-          <a 
-            href={INSTAGRAM_LINK} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 hover:text-primary-700 transition-colors"
-          >
-            <img src="/assets/icons/instagram.svg" alt="Instagram" className="w-4 h-4" />
-            <span>triadedaapresentacaopessoal</span>
-          </a>
-          
-          {/* Separator */}
-          <span className="hidden sm:inline text-white">|</span>
-          
-          {/* Copyright */}
-          <span className="text-center">&copy; 2025 Tríade da Apresentação Pessoal. Todos os direitos reservados.</span>
-          
-          {/* Separator */}
-          <span className="hidden sm:inline text-white">|</span>
-          
-          {/* Developer */}
-          <a 
-            href="https://github.com/kainamf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-center hover:text-primary-700 transition-colors underline"
-          >
-            Desenvolvido por Kainã Freitas
-          </a>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-font">
+          <div className="flex items-center gap-4">
+            <a href={EVENT_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:opacity-90">
+              <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" className="w-5 h-5" />
+              <span className="font-semibold">Reservas / WhatsApp</span>
+            </a>
+
+            <a href={EMAIL} className="flex items-center gap-2 hover:opacity-90">
+              <img src="/assets/icons/mail.svg" alt="E-mail" className="w-5 h-5" />
+              <span>leandra.marques03@gmail.com</span>
+            </a>
+          </div>
+
+          <div className="text-center">
+            <p className="text-sm">Entre louças e gestos, a elegância é o que permanece.</p>
+            <p className="text-xs text-secondary-700">Vagas limitadas • Curso individual personalizado</p>
+          </div>
+
+          <div className="text-right">
+            <a href={INSTAGRAM_LINK} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-90">Instagram</a>
+          </div>
         </div>
       </div>
     </footer>
