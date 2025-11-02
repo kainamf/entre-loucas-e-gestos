@@ -70,19 +70,19 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-20 grid md:grid-cols-2 gap-8">
-          <div className="relative h-80 md:h-96 rounded-sm overflow-hidden shadow-lg">
+        <div className="mt-20 grid md:grid-cols-2 gap-8 items-center">
+          <div className="rounded-sm overflow-hidden shadow-lg flex items-center justify-center">
             <img
               src="/settingTable.jpeg"
               alt="Table setting"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
-          <div className="relative h-80 md:h-96 rounded-sm overflow-hidden shadow-lg">
+          <div className="rounded-sm overflow-hidden shadow-lg flex items-center justify-center">
             <img
               src="/cookies.jpeg"
               alt="Tea time"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
         </div>

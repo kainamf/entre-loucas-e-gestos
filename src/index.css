@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	/* Palette provided by user */
+	--color-verde: #a8b098; /* verde principal */
+	--color-bege-900: #a68f7e; /* mais escuro */
+	--color-bege-700: #bfb2a8;
+	--color-bege-500: #c3b2a1; /* tom base */
+	--color-bege-300: #c8bfb8;
+	--color-bege-100: #d7c8c0; /* mais claro */
+}
+
+/* Utility helpers (optional) */
+.bg-verde { background-color: var(--color-verde); }
+.text-verde { color: var(--color-verde); }
+.border-verde { border-color: var(--color-verde); }
+
+.bg-bege-500 { background-color: var(--color-bege-500); }
+.text-bege-500 { color: var(--color-bege-500); }
+.border-bege-500 { border-color: var(--color-bege-500); }
