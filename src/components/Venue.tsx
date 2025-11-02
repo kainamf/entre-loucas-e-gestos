@@ -1,5 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
+import vogueLogo from '../assets/description1.png';
+import vogueSpace from '../assets/description2.png';
 
 export default function Venue() {
     return (
@@ -51,7 +53,7 @@ export default function Venue() {
                                         <span className="text-sm font-semibold text-secondary-600">Apoio</span>
                                         <div className="flex items-center gap-2">
                                             <img
-                                                src="/assets/images/vogue-logo.jpeg"
+                                                src={vogueLogo}
                                                 alt="Vogue Square Gallery"
                                                 className="h-36 w-36 md:h-40 md:w-40 object-contain flex-shrink-0"
                                             />
@@ -71,7 +73,7 @@ export default function Venue() {
                                 {/* Space Image */}
                                 <div className="rounded-2xl overflow-hidden shadow-lg">
                                     <img
-                                        src="/assets/images/vogue-space.jpeg"
+                                        src={vogueSpace}
                                         alt="Vogue Gallery Brasil - Espaço do Evento"
                                         className="w-full h-64 md:h-72 lg:h-80 object-cover"
                                     />
