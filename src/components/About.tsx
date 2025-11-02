@@ -75,14 +75,14 @@ export default function About() {
             <img
               src="/settingTable.jpeg"
               alt="Table setting"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
           <div className="relative h-80 md:h-96 rounded-sm overflow-hidden shadow-lg">
             <img
               src="/cookies.jpeg"
               alt="Tea time"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>

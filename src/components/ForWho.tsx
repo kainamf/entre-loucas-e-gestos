@@ -57,7 +57,7 @@ export default function ForWho() {
             <img
               src="/mesaPosta.jpeg"
               alt="Professional table setting"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </div>
