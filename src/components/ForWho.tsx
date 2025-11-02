@@ -53,11 +53,11 @@ export default function ForWho() {
         </div>
 
         <div className="mt-16">
-          <div className="relative h-96 md:h-[500px] rounded-sm overflow-hidden shadow-lg">
+          <div className="rounded-sm overflow-hidden shadow-lg flex items-center justify-center">
             <img
               src="/mesaPosta.jpeg"
               alt="Professional table setting"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
         </div>
