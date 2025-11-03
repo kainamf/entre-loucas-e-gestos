@@ -1,4 +1,5 @@
 import { Mail, MessageCircle, Instagram } from 'lucide-react';
+import { waLink } from '../constants/contact';
 
 export default function Footer() {
   return (
@@ -23,7 +24,7 @@ export default function Footer() {
             <h4 className="text-lg font-normal mb-4 text-stone-300">Contato</h4>
             <div className="space-y-3">
               <a
-                href="https://wa.me/5521969886267"
+                href={waLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center md:justify-start gap-3 text-stone-400 hover:text-white transition-colors duration-300"

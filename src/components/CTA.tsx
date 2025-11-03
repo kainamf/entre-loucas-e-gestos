@@ -26,10 +26,6 @@ export default function CTA({ onCTAClick }: CTAProps) {
         >
           Mais informações
         </button>
-
-        <p className="mt-8 text-gray-600 text-sm font-light">
-          Escolha entre opções individuais ou em grupo
-        </p>
       </div>
     </section>
   );
