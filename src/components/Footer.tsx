@@ -12,7 +12,7 @@ export default function Footer() {
               className="w-20 h-auto opacity-80"
             />
           </div>
-          <h3 className="text-2xl font-light tracking-wide mb-2">Entre Louças e Gestos</h3>
+          <h3 className="text-2xl font-light tracking-wide mb-2">Entre Mesas & Gestos</h3>
           <p className="text-stone-400 font-light">
             Mais do que regras, aprenda a viver a etiqueta com naturalidade e estilo.
           </p>

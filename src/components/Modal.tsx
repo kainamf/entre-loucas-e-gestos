@@ -56,7 +56,7 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
                 </div>
               </div>
               <a
-                href="https://wa.me/5521969886267?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20Individual%20-%20Entre%20Louças%20e%20Gestos"
+                href="https://wa.me/5521969886267?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20curso%20Individual%20-%20Entre%20Mesas%20%26%20Gestos"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-amber-700 text-white text-center py-3 rounded-sm hover:bg-amber-800 transition-colors duration-300 mt-6"
