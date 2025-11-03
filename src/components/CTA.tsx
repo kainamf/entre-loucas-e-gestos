@@ -22,7 +22,7 @@ export default function CTA({ onCTAClick }: CTAProps) {
 
         <button
           onClick={onCTAClick}
-          className="bg-amber-700 text-white px-12 py-4 rounded-sm text-lg font-normal hover:bg-amber-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          className="bg-verde text-white px-12 py-4 rounded-sm text-lg font-normal hover:bg-bege-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
         >
           Quero participar
         </button>

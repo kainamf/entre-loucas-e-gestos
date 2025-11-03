@@ -39,7 +39,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
 
         <button
           onClick={onCTAClick}
-          className="bg-white text-gray-900 px-10 py-4 rounded-sm text-lg font-normal hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          className="bg-verde text-white px-10 py-4 rounded-sm text-lg font-normal hover:bg-bege-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
         >
           Quero participar
         </button>

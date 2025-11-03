@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Instagram, Linkedin } from 'lucide-react';
+import { Mail, MessageCircle, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -45,20 +45,13 @@ export default function Footer() {
             <h4 className="text-lg font-normal mb-4 text-stone-300">Redes Sociais</h4>
             <div className="flex justify-center md:justify-end gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/letable.eventosintimistas/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center hover:bg-amber-700 transition-colors duration-300"
+                aria-label="Instagram - LeTable"
               >
                 <Instagram size={20} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center hover:bg-amber-700 transition-colors duration-300"
-              >
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
@@ -66,7 +59,7 @@ export default function Footer() {
 
         <div className="border-t border-stone-800 pt-8 text-center">
           <p className="text-stone-500 text-sm font-light">
-            © 2025 Entre Louças e Gestos. Todos os direitos reservados.
+            © 2025 LeTable Mesa Posta. Todos os direitos reservados.
           </p>
         </div>
       </div>
