@@ -29,7 +29,7 @@ export default function Testimonials() {
   ];
   const [index, setIndex] = useState(0);
   const length = items.length;
-  const interval = 10000; // 10s
+  const interval = 3000; // 3s
 
   // Refs for scroll container and timers
   const containerRef = useRef<HTMLDivElement | null>(null);
