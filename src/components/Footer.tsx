@@ -46,7 +46,7 @@ export default function Footer() {
             <h4 className="text-lg font-normal mb-4 text-stone-300">Redes Sociais</h4>
             <div className="flex justify-center md:justify-end gap-4">
               <a
-                href="https://www.instagram.com/letable.eventosintimistas/"
+                href="https://www.instagram.com/leandramarques.etiqueta/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center hover:bg-amber-700 transition-colors duration-300"
