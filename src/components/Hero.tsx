@@ -4,7 +4,7 @@ interface HeroProps {
 
 export default function Hero({ onCTAClick }: HeroProps) {
   return (
-  <section className="py-12 md:py-16 bg-verde/30">
+  <section className="py-12 md:py-16 bg-verde/60">
       <div className="max-w-6xl mx-auto px-6">
         {/* Logo on top */}
         <div className="mb-6 flex justify-center">
