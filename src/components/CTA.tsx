@@ -8,7 +8,7 @@ export default function CTA({ onCTAClick }: CTAProps) {
       <div className="max-w-4xl mx-auto px-6 text-center">
         <div className="border-t border-b border-amber-700 py-8 mb-12">
           <p className="text-2xl md:text-3xl text-gray-900 italic font-light tracking-wide leading-relaxed">
-            "Entre louças e gestos, a elegância é o que permanece."
+            Entre louças e gestos, a elegância é o que permanece.
           </p>
         </div>
 

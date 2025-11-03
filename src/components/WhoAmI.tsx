@@ -6,8 +6,8 @@ export default function WhoAmI() {
 
         <div className="rounded-sm overflow-hidden shadow-lg">
           <img
-            src="/cookies.jpeg"
-            alt="cookies"
+            src="/mesaPosta.jpeg"
+            alt="Mesa posta"
             className="w-full h-[60vh] md:h-[70vh] object-cover filter brightness-75"
           />
         </div>
