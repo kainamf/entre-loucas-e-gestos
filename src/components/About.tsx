@@ -37,15 +37,6 @@ export default function About() {
           </p>
         </div>
 
-        <div className="mb-16 text-center">
-          <div className="inline-block bg-stone-50 px-8 py-6 rounded-sm">
-            <p className="text-lg md:text-xl text-gray-800 font-light">
-              Este curso foi criado para quem deseja aprender a montar mesas bonitas e funcionais,
-              desenvolver gestos e postura adequados à etiqueta, e se sentir segura e elegante em qualquer ambiente.
-            </p>
-          </div>
-        </div>
-
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {features.map((feature, index) => (
             <div

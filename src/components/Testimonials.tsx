@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function Testimonials() {
   const items = [
@@ -31,25 +31,58 @@ export default function Testimonials() {
   const length = items.length;
   const interval = 10000; // 10s
 
-  // Use a timeout so manual navigation (setIndex) restarts the countdown
+  // Refs for scroll container and timers
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const autoRef = useRef<number | null>(null);
+  const scrollDebounceRef = useRef<number | null>(null);
+
+  // Auto-advance using timeout; resets whenever index changes
   useEffect(() => {
-    const t = window.setTimeout(() => {
+    if (autoRef.current) window.clearTimeout(autoRef.current);
+    autoRef.current = window.setTimeout(() => {
       setIndex((i) => (i + 1) % length);
     }, interval);
 
-    return () => window.clearTimeout(t);
+    return () => {
+      if (autoRef.current) window.clearTimeout(autoRef.current);
+    };
   }, [index, length]);
+
+  // When index changes programmatically, scroll the container
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const childWidth = el.clientWidth;
+    el.scrollTo({ left: index * childWidth, behavior: 'smooth' });
+  }, [index]);
+
+  // Handle manual scrolling: update index based on scroll position and reset timer
+  const onScroll = () => {
+    const el = containerRef.current;
+    if (!el) return;
+    if (scrollDebounceRef.current) window.clearTimeout(scrollDebounceRef.current);
+    scrollDebounceRef.current = window.setTimeout(() => {
+      const childWidth = el.clientWidth;
+      const newIndex = Math.round(el.scrollLeft / childWidth);
+      if (newIndex !== index) setIndex(newIndex);
+    }, 100);
+  };
 
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 text-center">O que dizem sobre nosso curso</h2>
 
-        {/* Carousel container */}
-        <div className="relative overflow-hidden">
-          <div className="flex transition-transform duration-700 ease-out" style={{ transform: `translateX(-${index * 100}%)` }}>
+        {/* Carousel container: horizontal scroll with snap */}
+        <div className="relative">
+          <div
+            ref={containerRef}
+            onScroll={onScroll}
+            className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth -mx-4 px-4"
+            style={{ scrollbarWidth: 'none' as const }}
+          >
             {items.map((it, idx) => (
-              <div key={idx} className="min-w-full px-4">
+              <div key={idx} className="min-w-full snap-start px-4">
                 <figure className="p-6 bg-stone-50 rounded-sm flex flex-col items-center text-center">
                   <img
                     src={it.image}
@@ -64,7 +97,6 @@ export default function Testimonials() {
               </div>
             ))}
           </div>
-
           {/* end carousel container */}
         </div>
 
