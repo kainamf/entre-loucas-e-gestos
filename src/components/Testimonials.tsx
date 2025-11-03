@@ -10,6 +10,16 @@ export default function Testimonials() {
         'O curso foi incrível! Pude aprender por experiências muito parecidas com a vida real e minha autoconfiança mudou da água pro vinho! Maravilhoso o programa e só tenho a agradecer! Hoje me sinto muito mais capaz de ir a um bom restaurante e me portar corretamente em eventos sociais e corporativos.',
       author: 'Luiza Helena Gandini — Fotógrafa de gastronomia, produtos e food stylist.',
     },
+    {
+      text:
+        'Depois do contato com o trabalho da Leandra, passei a enxergar a etiqueta como uma aliada — um gesto de cuidado que transforma qualquer momento. Ela me mostrou que pequenos detalhes fazem grande diferença. A etiqueta se tornou uma forma de tornar cada momento mais especial.',
+      author: 'Larissa Rodrigues — Consultora de Imagem e Mentora de Mulheres',
+    },
+    {
+      text:
+        'A etiqueta está presente em pequenas coisas no nosso dia a dia e, graças a Leandra, me sinto mais confiante com relação ao meu comportamento. Todos deveriam receber esse aprendizado, que, diferentemente do que pensam, não é só "coisa de gente rica". Vale cada ensinamento!',
+      author: 'Bruna Pullig — Consultora em Recursos Humanos, fundadora e Idealizadora da Ojo Consultoria',
+    },
   ];
 
   return (
