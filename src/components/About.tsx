@@ -40,10 +40,7 @@ export default function About() {
         <div className="mb-16 text-center">
           <div className="inline-block bg-stone-50 px-8 py-6 rounded-sm">
             <p className="text-lg md:text-xl text-gray-800 font-light">
-              <span className="font-normal">Formato:</span> 1 online + 3 presenciais
-            </p>
-            <p className="text-lg md:text-xl text-gray-800 mt-2 font-light">
-              <span className="font-normal">Duração:</span> 4 encontros de 1h30 a 2h cada
+              <span className="font-normal">Formato:</span> Individual — 1 online + 3 presenciais
             </p>
           </div>
         </div>
