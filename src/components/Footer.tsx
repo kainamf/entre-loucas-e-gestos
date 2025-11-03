@@ -23,7 +23,7 @@ export default function Footer() {
             <h4 className="text-lg font-normal mb-4 text-stone-300">Contato</h4>
             <div className="space-y-3">
               <a
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/5521969886267"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center md:justify-start gap-3 text-stone-400 hover:text-white transition-colors duration-300"
