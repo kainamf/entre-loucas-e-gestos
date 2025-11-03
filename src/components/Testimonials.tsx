@@ -65,17 +65,19 @@ export default function Testimonials() {
             ))}
           </div>
 
-          {/* Indicators */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-            {items.map((_, i) => (
-              <button
-                key={i}
-                aria-label={`Go to slide ${i + 1}`}
-                onClick={() => setIndex(i)}
-                className={`w-3 h-3 rounded-full ${i === index ? 'bg-amber-700' : 'bg-stone-300'}`}
-              />
-            ))}
-          </div>
+          {/* end carousel container */}
+        </div>
+
+        {/* Indicators moved outside the overflow-hidden area to avoid overlap with slide content */}
+        <div className="flex justify-center mt-6 gap-2">
+          {items.map((_, i) => (
+            <button
+              key={i}
+              aria-label={`Go to slide ${i + 1}`}
+              onClick={() => setIndex(i)}
+              className={`w-3 h-3 rounded-full ${i === index ? 'bg-amber-700' : 'bg-stone-300'}`}
+            />
+          ))}
         </div>
       </div>
     </section>
