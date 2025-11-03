@@ -23,7 +23,7 @@ export default function WhoAmI() {
           </p>
 
           <p>
-            Parceira do Social Forever – Elegância & Etiqueta e coautora do livro Mulheres & Poder,
+            Parceira da Socila Forever – Elegância & Etiqueta e coautora do livro Mulheres & Poder,
             Leandra acredita que a verdadeira sofisticação está no comportamento — nos gestos sutis,
             nas palavras gentis e na forma como acolhemos o outro.
           </p>
