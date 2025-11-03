@@ -4,11 +4,11 @@ export default function WhoAmI() {
       <div className="max-w-6xl mx-auto px-6">
   <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-8 tracking-wide text-center">Quem sou eu</h2>
 
-        <div className="rounded-sm overflow-hidden shadow-lg">
+        <div className="rounded-sm overflow-hidden">
           <img
             src="/mesaPosta.jpeg"
             alt="Mesa posta"
-            className="w-full h-[60vh] md:h-[70vh] object-cover filter brightness-75"
+            className="w-full h-auto max-h-[50vh] md:max-h-[90vh] object-contain object-center filter brightness-75"
           />
         </div>
 

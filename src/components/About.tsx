@@ -71,8 +71,8 @@ export default function About() {
         <div className="mt-20 flex justify-center">
           <div className="w-full md:w-3/4 rounded-sm overflow-hidden shadow-lg flex items-center justify-center">
             <img
-              src="/settingTable.jpeg"
-              alt="Table setting"
+              src="/tableTop.jpeg"
+              alt="Table top"
               className="w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
