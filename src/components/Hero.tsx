@@ -18,11 +18,11 @@ export default function Hero({ onCTAClick }: HeroProps) {
 
         {/* Overlay content: logo aligned to top, then title and CTA */}
         <div className="absolute inset-0 flex flex-col items-center text-center px-6 justify-between">
-          <div className="w-full flex justify-center pt-6 md:pt-8 z-10">
+          <div className="w-full flex justify-center pt-1 md:pt-2 z-10">
             <img
               src="/leTableLogo.png"
               alt="Le Table Logo"
-              className="w-32 md:w-40 h-auto opacity-95 drop-shadow-md"
+              className="w-36 md:w-48 h-auto opacity-95 drop-shadow-md"
             />
           </div>
 
