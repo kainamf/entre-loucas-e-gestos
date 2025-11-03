@@ -4,7 +4,7 @@ export default function About() {
   const features = [
     {
       icon: Leaf,
-      text: 'Técnicas de montagem de mesas elegantes e funcionais',
+      text: 'Como montar mesas elegantes e funcionais',
     },
     {
       icon: Utensils,
@@ -40,7 +40,8 @@ export default function About() {
         <div className="mb-16 text-center">
           <div className="inline-block bg-stone-50 px-8 py-6 rounded-sm">
             <p className="text-lg md:text-xl text-gray-800 font-light">
-              <span className="font-normal">Formato:</span> Individual — 1 online + 3 presenciais
+              Este curso foi criado para quem deseja aprender a montar mesas bonitas e funcionais,
+              desenvolver gestos e postura adequados à etiqueta, e se sentir segura e elegante em qualquer ambiente.
             </p>
           </div>
         </div>
