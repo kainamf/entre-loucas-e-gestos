@@ -59,7 +59,16 @@ export default function Footer() {
 
         <div className="border-t border-stone-800 pt-8 text-center">
           <p className="text-stone-500 text-sm font-light">
-            © 2025 LeTable Mesa Posta. Todos os direitos reservados.
+            Desenvolvido por{' '}
+            <a
+              href="https://www.linkedin.com/in/kainafreitas/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-stone-300 hover:underline"
+              aria-label="LinkedIn Kainã Freitas"
+            >
+              Kainã Freitas
+            </a>
           </p>
         </div>
       </div>
