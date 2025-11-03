@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Hero from './components/Hero';
+import WhoAmI from './components/WhoAmI';
 import About from './components/About';
 import ForWho from './components/ForWho';
 import CTA from './components/CTA';
@@ -11,8 +12,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Hero onCTAClick={() => setIsModalOpen(true)} />
-      <About />
+  <Hero onCTAClick={() => setIsModalOpen(true)} />
+  <WhoAmI />
+  <About />
       <ForWho />
       <CTA onCTAClick={() => setIsModalOpen(true)} />
       <Footer />
