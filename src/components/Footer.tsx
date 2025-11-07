@@ -62,11 +62,11 @@ export default function Footer() {
           <p className="text-stone-500 text-sm font-light">
             Desenvolvido por{' '}
             <a
-              href="https://www.linkedin.com/in/kainafreitas/"
+              href="https://github.com/kainamf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-300 hover:underline"
-              aria-label="LinkedIn Kainã Freitas"
+              aria-label="GitHub Kainã Freitas"
             >
               Kainã Freitas
             </a>

@@ -10,7 +10,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
         <img
           src="/cookies.jpeg"
           alt="Hero-image"
-          className="absolute inset-0 w-full h-full object-cover object-center filter brightness-90"
+          className="absolute inset-0 w-auto h-full object-cover object-top mx-auto filter brightness-90"
         />
 
         {/* subtle dark overlay for readability */}
