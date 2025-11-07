@@ -14,7 +14,7 @@ export default function Hero({ onCTAClick }: HeroProps) {
         />
 
         {/* subtle dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/30 md:hidden" />
 
         {/* Overlay content: logo aligned to top, then title and CTA */}
         <div className="absolute inset-0 flex flex-col items-center text-center px-6 justify-between">
