@@ -19,7 +19,7 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
       <div className="relative bg-white rounded-sm shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center hover:bg-gray-100 rounded-full transition-colors duration-200"
+          className="absolute top-2 right-2 w-10 h-10 flex items-center justify-center hover:bg-gray-100 rounded-full transition-colors duration-200"
         >
           <X size={24} className="text-gray-600" />
         </button>
